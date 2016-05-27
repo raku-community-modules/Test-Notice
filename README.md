@@ -7,7 +7,7 @@ Test::Notice - Display noticable messages to users during tests
 # SYNOPSIS
 
 ```perl6
-    use Test-Notice;
+    use Test::Notice;
     notice 'Install Foo::Bar::Baz for extra awesome features!';
 ```
 

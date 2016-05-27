@@ -8,7 +8,7 @@ Test::Notice - Display noticable messages to users during tests
 
 ```perl6
     use Test-Notice;
-    notice 'Install Foo::Bar for extra awesome features!';
+    notice 'Install Foo::Bar::Baz for extra awesome features!';
 ```
 
 # DESCRIPTION
@@ -23,7 +23,7 @@ the run of your test.
 ## `notice`
 
 ```perl6
-    notice 'Install Foo::Bar for extra awesome features!';
+    notice 'Install Foo::Bar::Baz for extra awesome features!';
 ```
 
 Takes one mandatory argument: the string to display in the message.

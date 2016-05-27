@@ -14,7 +14,7 @@ Test::Notice - Display noticable messages to users during tests
 # DESCRIPTION
 
 This module lets you display highly visible messages to users during
-the run of your test.
+the run of your test, pausing long enough for them to read it.
 
 ![](sample.png)
 

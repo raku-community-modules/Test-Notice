@@ -22,9 +22,12 @@ sub notice (Str $message, Bool :$try-color = True) is export {
         $color('bold red on_green') ~ $hr ~ $color('reset'),
         $color('bold blue on_green') ~ $hr ~ $color('reset'),
         $color('bold yellow on_green') ~ $hr ~ $color('reset'),
-        $color('bold white on_black') ~ $blank, $blank,
-            to-lines($message, $t-width - 6).map({"#  $_  #"}),
-        $blank, $blank ~ $color('reset'),
+        $color('bold white on_black') ~ $blank,
+        $color('bold white on_black') ~ $blank,
+            to-lines($message, $t-width - 6)
+                .map({$color('bold white on_black') ~ "#  $_  #"}),
+        $color('bold white on_black') ~ $blank,
+        $color('bold white on_black') ~ $blank,
         $color('bold yellow on_green') ~ $hr ~ $color('reset'),
         $color('bold blue on_green') ~ $hr ~ $color('reset'),
         $color('bold red on_green') ~ $hr ~ $color('reset');

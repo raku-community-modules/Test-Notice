@@ -2,7 +2,7 @@
 
 # NAME
 
-Test::Notice - Selectively run tests based on the environment and installed modules and libs
+Test::Notice - Display noticable messages to users during tests
 
 # SYNOPSIS
 

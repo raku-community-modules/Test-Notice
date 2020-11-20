@@ -6,7 +6,7 @@ Test::Notice - Display noticable messages to users during tests
 
 # SYNOPSIS
 
-```perl6
+```raku
     use Test::Notice;
     notice 'Install Foo::Bar::Baz for extra awesome features!';
 ```
@@ -22,7 +22,7 @@ the run of your test, pausing long enough for them to read it.
 
 ## `notice`
 
-```perl6
+```raku
     notice 'Install Foo::Bar::Baz for extra awesome features!';
 ```
 
@@ -46,12 +46,12 @@ into a single space.
 # REPOSITORY
 
 Fork this module on GitHub:
-https://github.com/zoffixznet/perl6-Test-Notice
+https://github.com/raku-community-modules/Test-Notice
 
 # BUGS
 
 To report bugs or request features, please use
-https://github.com/zoffixznet/perl6-Test-Notice/issues
+https://github.com/raku-community-modules/Test-Notice/issues
 
 # AUTHOR
 

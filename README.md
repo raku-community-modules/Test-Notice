@@ -7,6 +7,9 @@ Test::Notice - Display noticable messages to users during tests
 ```raku
     use Test::Notice;
     notice 'Install Foo::Bar::Baz for extra awesome features!';
+    
+    # Do not use colors
+    notice 'Now without colors!', :!try-color;
 ```
 
 # DESCRIPTION
@@ -18,7 +21,7 @@ the run of your test, pausing long enough for them to read it.
 
 # EXPORTED SUBROUTINES
 
-## `notice`
+## `notice( Str $message, Bool :$try-color = True )`
 
 ```raku
     notice 'Install Foo::Bar::Baz for extra awesome features!';
@@ -29,6 +32,9 @@ Does not return anything meaningful. The message will be coloured if optional
 `Terminal::ANSIColor` is installed. The output also pauses long enough
 for an average reader to read the entire message (regardless of its length),
 unless `NONINTERACTIVE_TESTING` environmental variable is set.
+
+You can turn detection of the coloring module by setting `:try-color` to 
+`False`.
 
 # LIMITATIONS
 
@@ -54,6 +60,8 @@ https://github.com/raku-community-modules/Test-Notice/issues
 # AUTHOR
 
 Zoffix Znet (http://zoffix.com/)
+
+Currently maintained by the Raku Community Adoption devs.
 
 # LICENSE
 

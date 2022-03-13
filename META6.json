@@ -18,5 +18,5 @@
     "Test::Notice": "lib/Test/Notice.pm6"
   },
   "license": "Artistic-2.0",
-  "source-url": "https://github.com/raku-community-modules/Test-Notice"
+  "source-url": "https://github.com/raku-community-modules/Test-Notice.git"
 }

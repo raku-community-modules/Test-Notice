@@ -1,4 +1,6 @@
-# NAME
+[![Tests on source](https://github.com/raku-community-modules/Test-Notice/actions/workflows/test.yaml/badge.svg)](https://github.com/raku-community-modules/Test-Notice/actions/workflows/test.yaml)
+
+# NAME 
 
 Test::Notice - Display noticable messages to users during tests
 

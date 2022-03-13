@@ -1,5 +1,3 @@
-[![Build Status](https://travis-ci.org/zoffixznet/perl6-Test-Notice.svg)](https://travis-ci.org/zoffixznet/perl6-Test-Notice)
-
 # NAME
 
 Test::Notice - Display noticable messages to users during tests

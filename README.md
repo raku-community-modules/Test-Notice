@@ -1,72 +1,60 @@
-[![Tests on source](https://github.com/raku-community-modules/Test-Notice/actions/workflows/test.yaml/badge.svg)](https://github.com/raku-community-modules/Test-Notice/actions/workflows/test.yaml)
+[![Actions Status](https://github.com/raku-community-modules/Test-Notice/actions/workflows/linux.yml/badge.svg)](https://github.com/raku-community-modules/Test-Notice/actions) [![Actions Status](https://github.com/raku-community-modules/Test-Notice/actions/workflows/macos.yml/badge.svg)](https://github.com/raku-community-modules/Test-Notice/actions) [![Actions Status](https://github.com/raku-community-modules/Test-Notice/actions/workflows/windows.yml/badge.svg)](https://github.com/raku-community-modules/Test-Notice/actions)
 
-# NAME 
+NAME
+====
 
-Test::Notice - Display noticable messages to users during tests
+Test::Notice - Display noticeable messages to users during tests
 
-# SYNOPSIS
-
-```raku
-    use Test::Notice;
-    notice 'Install Foo::Bar::Baz for extra awesome features!';
-    
-    # Do not use colors
-    notice 'Now without colors!', :!try-color;
-```
-
-# DESCRIPTION
-
-This module lets you display highly visible messages to users during
-the run of your test, pausing long enough for them to read it.
-
-![](sample.png)
-
-# EXPORTED SUBROUTINES
-
-## `notice( Str $message, Bool :$try-color = True )`
+SYNOPSIS
+========
 
 ```raku
-    notice 'Install Foo::Bar::Baz for extra awesome features!';
+use Test::Notice;
+notice 'Install Foo::Bar::Baz for extra awesome features!';
+
+# Do not use colors
+notice 'Now without colors!', :!try-color;
 ```
 
-Takes one mandatory argument: the string to display in the message.
-Does not return anything meaningful. The message will be coloured if optional
-`Terminal::ANSIColor` is installed. The output also pauses long enough
-for an average reader to read the entire message (regardless of its length),
-unless `NONINTERACTIVE_TESTING` environmental variable is set.
+DESCRIPTION
+===========
 
-You can turn detection of the coloring module by setting `:try-color` to 
-`False`.
+This module lets you display highly visible messages to users during the run of your test, pausing long enough for them to read it.
 
-# LIMITATIONS
+EXPORTED SUBROUTINES
+====================
 
-The current implementation always assumes the terminal width of 80 characters.
-If you can figure out how to get the actual width when test is run with
-`prove`, patches are more than welcome.
+notice( Str $message, Bool :$try-color = True )
+-----------------------------------------------
 
-Currently, any amount of whitespace in the displayed message will be squashed
-into a single space.
+```raku
+notice 'Install Foo::Bar::Baz for extra awesome features!';
+```
 
----
+Takes one mandatory argument: the string to display in the message. Does not return anything meaningful. The message will be coloured if optional `Terminal::ANSIColor` is installed.
 
-# REPOSITORY
+The output also pauses long enough for an average reader to read the entire message (regardless of its length), unless `NONINTERACTIVE_TESTING` environmental variable is set.
 
-Fork this module on GitHub:
-https://github.com/raku-community-modules/Test-Notice
+You can turn detection off the coloring module by setting `:try-color` to `False`.
 
-# BUGS
+LIMITATIONS
+===========
 
-To report bugs or request features, please use
-https://github.com/raku-community-modules/Test-Notice/issues
+The current implementation always assumes the terminal width of 80 characters. If you can figure out how to get the actual width when tests are run, patches are more than welcome.
 
-# AUTHOR
+Currently, any amount of whitespace in the displayed message will be squashed into a single space.
 
-Zoffix Znet (http://zoffix.com/)
+AUTHOR
+======
 
-Currently maintained by the Raku Community Adoption devs.
+Zoffix Znet
 
-# LICENSE
+COPYRIGHT AND LICENSE
+=====================
 
-You can use and distribute this module under the terms of the
-The Artistic License 2.0. See the `LICENSE` file included in this
-distribution for complete details.
+Copyright 2016 - 2017 Zoffix Znet
+
+Copyright 2020 - 2024 Raku Community
+
+This library is free software; you can redistribute it and/or modify it under the Artistic License 2.0.
+

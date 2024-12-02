@@ -1,0 +1,7 @@
+Revision history for Test::Notice
+
+{{$NEXT}}
+    - Use modern file extensions
+    - Add CI badge for each OS
+    - Some documentation updates to current situation
+    - First version released as a Raku community module

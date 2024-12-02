@@ -1,22 +1,25 @@
 {
-  "name": "Test::Notice",
-  "description": "Display noticeable messages to users during tests",
-  "version": "1.001005",
-  "perl": "6.c",
+  "auth": "zef:raku-community-modules",
   "authors": [
     "Zoffix Znet"
   ],
-  "auth": "zef:raku-community-modules",
+  "build-depends": [
+  ],
   "depends": [
-    "Test"
+  ],
+  "description": "Display noticeable messages to users during tests",
+  "license": "Artistic-2.0",
+  "name": "Test::Notice",
+  "perl": "6.c",
+  "provides": {
+    "Test::Notice": "lib/Test/Notice.rakumod"
+  },
+  "resources": [
+  ],
+  "source-url": "https://github.com/raku-community-modules/Test-Notice.git",
+  "tags": [
   ],
   "test-depends": [
-    "Test",
-    "Test::META"
   ],
-  "provides": {
-    "Test::Notice": "lib/Test/Notice.pm6"
-  },
-  "license": "Artistic-2.0",
-  "source-url": "https://github.com/raku-community-modules/Test-Notice.git"
+  "version": "1.001005"
 }
